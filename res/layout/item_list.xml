@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    	<ImageView
+	      android:id="@+id/icone_item"
+	      android:layout_width="60dp"
+	      android:layout_height="42dp"
+	      android:background="#ffffff"
+	      android:scaleType="centerCrop" />
+  
+        <TextView
+            android:id="@+id/nome_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icone_item"
+            android:layout_alignTop="@id/icone_item"
+            android:textSize="20sp"    
+      		android:textColor="#333333"
+      		android:paddingLeft="5dp"  />
+ 
+        <TextView
+            android:id="@+id/endereco_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome_item"
+            android:layout_toRightOf="@id/icone_item"
+            android:textColor="#333333"
+      		android:paddingLeft="5dp" />
+        
+        <TextView
+            android:id="@+id/cidade_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endereco_item"
+            android:layout_toRightOf="@id/icone_item"
+            android:textColor="#333333"
+      		android:paddingLeft="5dp"/>
+ 
+        <TextView
+            android:id="@+id/distancia_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333" 
+            android:layout_below="@id/endereco_item"
+            android:layout_alignParentRight="true"/>
+ 
+</RelativeLayout>
